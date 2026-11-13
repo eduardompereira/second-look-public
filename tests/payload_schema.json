@@ -1,0 +1,2320 @@
+{
+"second_look.json": {
+".clips.gp02.dur": [
+"num"
+],
+".clips.gp02.file": [
+"str"
+],
+".clips.gp04.dur": [
+"num"
+],
+".clips.gp04.file": [
+"str"
+],
+".facts.gp02.distance_m": [
+"num"
+],
+".facts.gp02.higher_xg_non_goals": [
+"num"
+],
+".facts.gp02.period": [
+"str"
+],
+".facts.gp02.rows[]": [
+"num"
+],
+".facts.gp02.rows[]#len": [
+"2"
+],
+".facts.gp02.score_before": [
+"str"
+],
+".facts.gp02.screeners[]": [
+"str"
+],
+".facts.gp02.screeners[]#len": [
+"2"
+],
+".facts.gp02.shot_row": [
+"num"
+],
+".facts.gp02.xg": [
+"num"
+],
+".facts.gp02.xg_rank": [
+"str"
+],
+".facts.gp04.d1_m": [
+"num"
+],
+".facts.gp04.d2_m": [
+"num"
+],
+".facts.gp04.dt_s": [
+"num"
+],
+".facts.gp04.lateral_definition": [
+"str"
+],
+".facts.gp04.lateral_m": [
+"num"
+],
+".facts.gp04.period": [
+"str"
+],
+".facts.gp04.rows[]": [
+"num"
+],
+".facts.gp04.rows[]#len": [
+"2"
+],
+".facts.gp04.score_before": [
+"str"
+],
+".facts.gp04.shooters[]": [
+"str"
+],
+".facts.gp04.shooters[]#len": [
+"2"
+],
+".facts.gp04.shot_rows[]": [
+"num"
+],
+".facts.gp04.shot_rows[]#len": [
+"2"
+],
+".facts.gp04.state_after_shot1": [
+"str"
+],
+".gp02.beam.cx": [
+"num"
+],
+".gp02.beam.cy": [
+"num"
+],
+".gp02.beam.rx": [
+"num"
+],
+".gp02.beam.ry": [
+"num"
+],
+".gp02.bodies[]#len": [
+"2"
+],
+".gp02.bodies[].label": [
+"str"
+],
+".gp02.bodies[].team": [
+"str"
+],
+".gp02.bodies[].xy[]": [
+"num"
+],
+".gp02.bodies[].xy[]#len": [
+"2"
+],
+".gp02.chrome": [
+"str"
+],
+".gp02.goal_continue[]": [
+"num"
+],
+".gp02.goal_continue[]#len": [
+"2"
+],
+".gp02.goalie[]": [
+"num"
+],
+".gp02.goalie[]#len": [
+"2"
+],
+".gp02.lane[]#len": [
+"2"
+],
+".gp02.lane[][]": [
+"num"
+],
+".gp02.lane[][]#len": [
+"2"
+],
+".gp02.net[]": [
+"num"
+],
+".gp02.net[]#len": [
+"2"
+],
+".gp02.punch[]": [
+"num"
+],
+".gp02.punch[]#len": [
+"4"
+],
+".gp02.regions[]#len": [
+"4"
+],
+".gp02.regions[].a[]": [
+"num"
+],
+".gp02.regions[].a[]#len": [
+"2"
+],
+".gp02.regions[].b[]": [
+"num"
+],
+".gp02.regions[].b[]#len": [
+"2"
+],
+".gp02.regions[].cx": [
+"num"
+],
+".gp02.regions[].cy": [
+"num"
+],
+".gp02.regions[].id": [
+"str"
+],
+".gp02.regions[].kind": [
+"str"
+],
+".gp02.regions[].rx": [
+"num"
+],
+".gp02.regions[].ry": [
+"num"
+],
+".gp02.regions[].tol": [
+"num"
+],
+".gp02.release": [
+"num"
+],
+".gp02.replay_from": [
+"num"
+],
+".gp02.shooter[]": [
+"num"
+],
+".gp02.shooter[]#len": [
+"2"
+],
+".gp02.stands_y[]": [
+"num"
+],
+".gp02.stands_y[]#len": [
+"2"
+],
+".gp02.watch[]": [
+"num"
+],
+".gp02.watch[]#len": [
+"2"
+],
+".gp03_card.playable": [
+"bool"
+],
+".gp03_card.poster": [
+"str"
+],
+".gp03_card.text": [
+"str"
+],
+".gp04.beam.cx": [
+"num"
+],
+".gp04.beam.cy": [
+"num"
+],
+".gp04.beam.rx": [
+"num"
+],
+".gp04.beam.ry": [
+"num"
+],
+".gp04.chrome": [
+"str"
+],
+".gp04.crop[]": [
+"num"
+],
+".gp04.crop[]#len": [
+"4"
+],
+".gp04.cue_consistent[]": [
+"str"
+],
+".gp04.cue_consistent[]#len": [
+"2"
+],
+".gp04.freeze": [
+"num"
+],
+".gp04.goalie[]": [
+"num"
+],
+".gp04.goalie[]#len": [
+"2"
+],
+".gp04.net[]": [
+"num"
+],
+".gp04.net[]#len": [
+"2"
+],
+".gp04.regions[]#len": [
+"3"
+],
+".gp04.regions[].cx": [
+"num"
+],
+".gp04.regions[].cy": [
+"num"
+],
+".gp04.regions[].id": [
+"str"
+],
+".gp04.regions[].kind": [
+"str"
+],
+".gp04.regions[].r[]": [
+"num"
+],
+".gp04.regions[].r[]#len": [
+"4"
+],
+".gp04.regions[].rx": [
+"num"
+],
+".gp04.regions[].ry": [
+"num"
+],
+".gp04.shot1": [
+"num"
+],
+".gp04.shot1_origin[]": [
+"num"
+],
+".gp04.shot1_origin[]#len": [
+"2"
+],
+".gp04.shot2": [
+"num"
+],
+".gp04.shot2pos[]": [
+"num"
+],
+".gp04.shot2pos[]#len": [
+"2"
+],
+".gp04.slow.end": [
+"num"
+],
+".gp04.slow.rate": [
+"num"
+],
+".gp04.slow.start": [
+"num"
+],
+".gp04.watch[]": [
+"num"
+],
+".gp04.watch[]#len": [
+"2"
+],
+".hooks.H1": [
+"str"
+],
+".hooks.H2": [
+"str"
+],
+".hooks.H3": [
+"str"
+],
+".hooks.cta": [
+"str"
+],
+".hooks.default": [
+"str"
+],
+".match.away": [
+"str"
+],
+".match.away_goals": [
+"num"
+],
+".match.date": [
+"str"
+],
+".match.home": [
+"str"
+],
+".match.home_goals": [
+"num"
+],
+".match.label": [
+"str"
+],
+".match.score": [
+"str"
+]
+},
+"story2.json": {
+".clips.gp03.dur": [
+"num"
+],
+".clips.gp03.file": [
+"str"
+],
+".clips.gp08.dur": [
+"num"
+],
+".clips.gp08.file": [
+"str"
+],
+".clips.gp09.dur": [
+"num"
+],
+".clips.gp09.file": [
+"str"
+],
+".cues.gp03.dur": [
+"num"
+],
+".cues.gp03.goal_line": [
+"num"
+],
+".cues.gp03.pass_corner": [
+"num"
+],
+".cues.gp03.shot": [
+"num"
+],
+".cues.gp08.control": [
+"num"
+],
+".cues.gp08.dur": [
+"num"
+],
+".cues.gp08.goal_row": [
+"num"
+],
+".cues.gp08.pass": [
+"num"
+],
+".cues.gp08.recover": [
+"num"
+],
+".cues.gp08.shot": [
+"num"
+],
+".cues.gp09.dur": [
+"num"
+],
+".cues.gp09.first_pass": [
+"num"
+],
+".cues.gp09.goal_row": [
+"num"
+],
+".cues.gp09.pass": [
+"num"
+],
+".cues.gp09.passer_control": [
+"num"
+],
+".cues.gp09.passer_recover": [
+"num"
+],
+".cues.gp09.shooter_control": [
+"num"
+],
+".cues.gp09.shot": [
+"num"
+],
+".facts.gp03.distance_m": [
+"num"
+],
+".facts.gp03.period": [
+"str"
+],
+".facts.gp03.result": [
+"str"
+],
+".facts.gp03.rows[]": [
+"num"
+],
+".facts.gp03.rows[]#len": [
+"2"
+],
+".facts.gp03.score_before": [
+"str"
+],
+".facts.gp03.shooter": [
+"str"
+],
+".facts.gp03.shot_row": [
+"num"
+],
+".facts.gp03.xg": [
+"num"
+],
+".facts.gp03.xg_rank": [
+"str"
+],
+".facts.gp08.across_definition": [
+"str"
+],
+".facts.gp08.across_m": [
+"num"
+],
+".facts.gp08.goal_row": [
+"num"
+],
+".facts.gp08.goalie": [
+"str"
+],
+".facts.gp08.pass_dy_m": [
+"num"
+],
+".facts.gp08.pass_row": [
+"num"
+],
+".facts.gp08.pass_to_shot_fan": [
+"str"
+],
+".facts.gp08.pass_to_shot_s": [
+"num"
+],
+".facts.gp08.passer": [
+"str"
+],
+".facts.gp08.period": [
+"str"
+],
+".facts.gp08.rows[]": [
+"num"
+],
+".facts.gp08.rows[]#len": [
+"2"
+],
+".facts.gp08.score_after": [
+"str"
+],
+".facts.gp08.score_before": [
+"str"
+],
+".facts.gp08.screeners_coded": [
+"str"
+],
+".facts.gp08.seconds_after_gp03": [
+"num"
+],
+".facts.gp08.shooter": [
+"str"
+],
+".facts.gp08.shot_distance_m": [
+"num"
+],
+".facts.gp08.shot_row": [
+"num"
+],
+".facts.gp09.game_clock_after_gp08_s": [
+"num"
+],
+".facts.gp09.goal_row": [
+"num"
+],
+".facts.gp09.goalie": [
+"str"
+],
+".facts.gp09.nearest_davos_skater_at_shot_m": [
+"num"
+],
+".facts.gp09.pass_row": [
+"num"
+],
+".facts.gp09.pass_start_beyond_goal_line_m": [
+"num"
+],
+".facts.gp09.pass_to_shot_s": [
+"num"
+],
+".facts.gp09.pass_wording": [
+"str"
+],
+".facts.gp09.passer": [
+"str"
+],
+".facts.gp09.period": [
+"str"
+],
+".facts.gp09.rows[]": [
+"num"
+],
+".facts.gp09.rows[]#len": [
+"2"
+],
+".facts.gp09.score_after": [
+"str"
+],
+".facts.gp09.score_before": [
+"str"
+],
+".facts.gp09.shooter": [
+"str"
+],
+".facts.gp09.shot_distance_m": [
+"num"
+],
+".facts.gp09.shot_row": [
+"num"
+]
+},
+"w3c_context.json": {
+".goalie_pool.davos_goals": [
+"num"
+],
+".goalie_pool.empty_net_goals": [
+"num"
+],
+".goalie_pool.label": [
+"str"
+],
+".goalie_pool.n_attempts": [
+"num"
+],
+".goalie_pool.n_goals": [
+"num"
+],
+".gp02.distance_m": [
+"num"
+],
+".gp02.label": [
+"str"
+],
+".gp02.n_attempts_as_far_or_further": [
+"num"
+],
+".gp02.n_attempts_rated_higher": [
+"num"
+],
+".gp02.n_attempts_with_xg": [
+"num"
+],
+".gp02.n_nongoals_rated_higher": [
+"num"
+],
+".gp02.next_longest_goal_m": [
+"num"
+],
+".gp02.rank_label": [
+"str"
+],
+".gp02.xg": [
+"num"
+],
+".gp03.distance_m": [
+"num"
+],
+".gp03.label": [
+"str"
+],
+".gp03.nearest_selects_m": [
+"num"
+],
+".gp03.selects_within_3m": [
+"num"
+],
+".gp03.xg": [
+"num"
+],
+".gp03.xg_rank": [
+"str"
+],
+".gp04.d1_m": [
+"num"
+],
+".gp04.d2_m": [
+"num"
+],
+".gp04.drop_rank": [
+"num"
+],
+".gp04.dt_rank": [
+"num"
+],
+".gp04.dt_s": [
+"num"
+],
+".gp04.label": [
+"str"
+],
+".gp04.n_linked_pairs": [
+"num"
+],
+".gp04.n_pairs": [
+"num"
+],
+".gp04.rank_label": [
+"str"
+],
+".gp08.across_m": [
+"num"
+],
+".gp08.across_rank_label": [
+"str"
+],
+".gp08.label": [
+"str"
+],
+".gp08.n_attempts_after_pass": [
+"num"
+],
+".gp08.nearest_selects_m": [
+"num"
+],
+".gp08.next_widest_goal_on_goalie_m": [
+"num"
+],
+".gp08.pass_to_shot_fan": [
+"str"
+],
+".gp08.pass_to_shot_rank": [
+"num"
+],
+".gp08.pass_to_shot_s": [
+"num"
+],
+".gp08.seconds_after_gp03": [
+"num"
+],
+".gp08.selects_within_5m": [
+"num"
+],
+".gp08.space_rank_label": [
+"str"
+],
+".gp09.keyframe_s_before_pass": [
+"num"
+],
+".gp09.label": [
+"str"
+],
+".gp09.n_attempts_after_pass": [
+"num"
+],
+".gp09.pass_start_beyond_goal_line_m": [
+"num"
+],
+".gp09.pass_to_shot_s": [
+"num"
+],
+".gp09.passerB_nearest_davos_m": [
+"num"
+],
+".gp09.rank_all": [
+"num"
+],
+".gp09.rank_label": [
+"str"
+],
+".gp09.shooterB_across_fan": [
+"str"
+],
+".gp09.shooterB_across_from_passerB_m": [
+"num"
+],
+".gp09.shooterB_nearest_davos_at_pass_m": [
+"num"
+],
+".gp09.shooterB_nearest_davos_at_shot_m": [
+"num"
+],
+".twin.clock_s1": [
+"str"
+],
+".twin.clock_win": [
+"str"
+],
+".twin.goalie": [
+"str"
+],
+".twin.label": [
+"str"
+],
+".twin.loc_sep_m": [
+"num"
+],
+".twin.result_s1": [
+"str"
+],
+".twin.result_win": [
+"str"
+],
+".twin.rows[]": [
+"num"
+],
+".twin.rows[]#len": [
+"2"
+],
+".twin.score": [
+"str"
+],
+".twin.screens_s1[]": [
+"str"
+],
+".twin.screens_s1[]#len": [
+"2"
+],
+".twin.screens_win[]": [
+"str"
+],
+".twin.screens_win[]#len": [
+"2"
+],
+".twin.xg_both": [
+"num"
+]
+},
+"look_around.json": {
+".facts.corner_sep_m": [
+"num"
+],
+".facts.davos_elapsed.<id>": [
+"num"
+],
+".facts.goalie_pool.by_band.close.blocked": [
+"num"
+],
+".facts.goalie_pool.by_band.close.goals": [
+"num"
+],
+".facts.goalie_pool.by_band.close.missed": [
+"num"
+],
+".facts.goalie_pool.by_band.close.n": [
+"num"
+],
+".facts.goalie_pool.by_band.close.saved": [
+"num"
+],
+".facts.goalie_pool.by_band.close.xg_mean": [
+"num"
+],
+".facts.goalie_pool.by_band.far.blocked": [
+"num"
+],
+".facts.goalie_pool.by_band.far.goals": [
+"num"
+],
+".facts.goalie_pool.by_band.far.missed": [
+"num"
+],
+".facts.goalie_pool.by_band.far.n": [
+"num"
+],
+".facts.goalie_pool.by_band.far.saved": [
+"num"
+],
+".facts.goalie_pool.by_band.far.xg_mean": [
+"num"
+],
+".facts.goalie_pool.by_band.mid.blocked": [
+"num"
+],
+".facts.goalie_pool.by_band.mid.goals": [
+"num"
+],
+".facts.goalie_pool.by_band.mid.missed": [
+"num"
+],
+".facts.goalie_pool.by_band.mid.n": [
+"num"
+],
+".facts.goalie_pool.by_band.mid.saved": [
+"num"
+],
+".facts.goalie_pool.by_band.mid.xg_mean": [
+"num"
+],
+".facts.goalie_pool.empty_net_excluded": [
+"num"
+],
+".facts.goalie_pool.footage_rows[]": [
+"num"
+],
+".facts.goalie_pool.footage_rows[]#len": [
+"6"
+],
+".facts.goalie_pool.goal_dists[]": [
+"num"
+],
+".facts.goalie_pool.goal_dists[]#len": [
+"4"
+],
+".facts.goalie_pool.n": [
+"num"
+],
+".facts.n_shifts": [
+"num"
+],
+".facts.pass_then_shot.median_rate_n10": [
+"num"
+],
+".facts.pass_then_shot.passer.led": [
+"num"
+],
+".facts.pass_then_shot.passer.n": [
+"num"
+],
+".facts.pass_then_shot.passer.rate": [
+"num"
+],
+".facts.pass_then_shot.top[]#len": [
+"4"
+],
+".facts.pass_then_shot.top[].led": [
+"num"
+],
+".facts.pass_then_shot.top[].n": [
+"num"
+],
+".facts.pass_then_shot.top[].name": [
+"str"
+],
+".facts.pass_then_shot.top[].rate": [
+"num"
+],
+".facts.passer_final.A": [
+"num"
+],
+".facts.passer_final.G": [
+"num"
+],
+".facts.passer_final.Passes": [
+"num"
+],
+".facts.passer_final.S": [
+"num"
+],
+".facts.passer_to_date[]": [
+"num"
+],
+".facts.passer_to_date[]#len": [
+"3"
+],
+".facts.play_s": [
+"num"
+],
+".facts.selects_elapsed.<id>": [
+"num"
+],
+".facts.typical_shift_s": [
+"num"
+],
+".facts.xg_rank.<id>": [
+"num"
+],
+".founds.f_goalie.caveat": [
+"str"
+],
+".founds.f_goalie.ctx": [
+"str"
+],
+".founds.f_goalie.depth.context.bands": [
+"bool"
+],
+".founds.f_goalie.depth.context.lead": [
+"str"
+],
+".founds.f_goalie.depth.context.note": [
+"NoneType"
+],
+".founds.f_goalie.depth.context.short": [
+"str"
+],
+".founds.f_goalie.depth.context.title": [
+"str"
+],
+".founds.f_goalie.depth.ctx": [
+"str"
+],
+".founds.f_goalie.depth.deeper.rows[]#len": [
+"3"
+],
+".founds.f_goalie.depth.deeper.rows[][]": [
+"str"
+],
+".founds.f_goalie.depth.deeper.rows[][]#len": [
+"2"
+],
+".founds.f_goalie.depth.deeper.short": [
+"str"
+],
+".founds.f_goalie.depth.deeper.title": [
+"str"
+],
+".founds.f_goalie.depth.facts[]#len": [
+"0"
+],
+".founds.f_goalie.depth.limit.short": [
+"str"
+],
+".founds.f_goalie.depth.limit.text": [
+"str"
+],
+".founds.f_goalie.depth.worth.short": [
+"str"
+],
+".founds.f_goalie.depth.worth.text": [
+"str"
+],
+".founds.f_goalie.line": [
+"str"
+],
+".founds.f_goalie.short": [
+"str"
+],
+".founds.f_goalie.src": [
+"str"
+],
+".founds.f_goalie.technical.confidence": [
+"str"
+],
+".founds.f_goalie.technical.coverage": [
+"str"
+],
+".founds.f_goalie.technical.eligibility": [
+"str"
+],
+".founds.f_goalie.technical.geometry": [
+"str"
+],
+".founds.f_goalie.technical.limits": [
+"str"
+],
+".founds.f_goalie.technical.quality": [
+"str"
+],
+".founds.f_goalie.technical.relationships": [
+"str"
+],
+".founds.f_goalie.technical.rows": [
+"str"
+],
+".founds.f_goalie.technical.validity": [
+"str"
+],
+".founds.f_goalie.why.also": [
+"str"
+],
+".founds.f_goalie.why.limit": [
+"str"
+],
+".founds.f_goalie.why.moments[]": [
+"str"
+],
+".founds.f_goalie.why.moments[]#len": [
+"6"
+],
+".founds.f_goalie.why.source": [
+"str"
+],
+".founds.f_goalie.why.text[]": [
+"str"
+],
+".founds.f_goalie.why.text[]#len": [
+"3"
+],
+".founds.f_goalie.why_it_matters": [
+"str"
+],
+".founds.f_passer.caveat": [
+"str"
+],
+".founds.f_passer.ctx": [
+"str"
+],
+".founds.f_passer.depth.context.lead": [
+"str"
+],
+".founds.f_passer.depth.context.note": [
+"str"
+],
+".founds.f_passer.depth.context.short": [
+"str"
+],
+".founds.f_passer.depth.context.steps[]#len": [
+"3"
+],
+".founds.f_passer.depth.context.steps[].k": [
+"str"
+],
+".founds.f_passer.depth.context.steps[].sub": [
+"str"
+],
+".founds.f_passer.depth.context.steps[].v": [
+"num"
+],
+".founds.f_passer.depth.context.title": [
+"str"
+],
+".founds.f_passer.depth.ctx": [
+"str"
+],
+".founds.f_passer.depth.deeper.rows[]#len": [
+"3"
+],
+".founds.f_passer.depth.deeper.rows[][]": [
+"str"
+],
+".founds.f_passer.depth.deeper.rows[][]#len": [
+"2"
+],
+".founds.f_passer.depth.deeper.short": [
+"str"
+],
+".founds.f_passer.depth.deeper.title": [
+"str"
+],
+".founds.f_passer.depth.facts[]#len": [
+"0"
+],
+".founds.f_passer.depth.limit.short": [
+"str"
+],
+".founds.f_passer.depth.limit.text": [
+"str"
+],
+".founds.f_passer.depth.worth.short": [
+"str"
+],
+".founds.f_passer.depth.worth.text": [
+"str"
+],
+".founds.f_passer.line": [
+"str"
+],
+".founds.f_passer.short": [
+"str"
+],
+".founds.f_passer.src": [
+"str"
+],
+".founds.f_passer.technical.confidence": [
+"str"
+],
+".founds.f_passer.technical.coverage": [
+"str"
+],
+".founds.f_passer.technical.eligibility": [
+"str"
+],
+".founds.f_passer.technical.geometry": [
+"str"
+],
+".founds.f_passer.technical.limits": [
+"str"
+],
+".founds.f_passer.technical.mtd": [
+"str"
+],
+".founds.f_passer.technical.quality": [
+"str"
+],
+".founds.f_passer.technical.relationships": [
+"str"
+],
+".founds.f_passer.technical.rows": [
+"str"
+],
+".founds.f_passer.technical.validity": [
+"str"
+],
+".founds.f_passer.why.also": [
+"str"
+],
+".founds.f_passer.why.limit": [
+"str"
+],
+".founds.f_passer.why.moments[]": [
+"str"
+],
+".founds.f_passer.why.moments[]#len": [
+"2"
+],
+".founds.f_passer.why.source": [
+"str"
+],
+".founds.f_passer.why.text[]": [
+"str"
+],
+".founds.f_passer.why.text[]#len": [
+"3"
+],
+".founds.f_passer.why_it_matters": [
+"str"
+],
+".founds.f_same_five.caveat": [
+"str"
+],
+".founds.f_same_five.ctx": [
+"str"
+],
+".founds.f_same_five.depth.context.lead": [
+"str"
+],
+".founds.f_same_five.depth.context.note": [
+"NoneType"
+],
+".founds.f_same_five.depth.context.short": [
+"str"
+],
+".founds.f_same_five.depth.context.times[]#len": [
+"2"
+],
+".founds.f_same_five.depth.context.times[].rows[]#len": [
+"5"
+],
+".founds.f_same_five.depth.context.times[].rows[][]": [
+"str"
+],
+".founds.f_same_five.depth.context.times[].rows[][]#len": [
+"2"
+],
+".founds.f_same_five.depth.context.times[].team": [
+"str"
+],
+".founds.f_same_five.depth.context.title": [
+"str"
+],
+".founds.f_same_five.depth.ctx": [
+"str"
+],
+".founds.f_same_five.depth.deeper.rows[]#len": [
+"3"
+],
+".founds.f_same_five.depth.deeper.rows[][]": [
+"str"
+],
+".founds.f_same_five.depth.deeper.rows[][]#len": [
+"2"
+],
+".founds.f_same_five.depth.deeper.short": [
+"str"
+],
+".founds.f_same_five.depth.deeper.title": [
+"str"
+],
+".founds.f_same_five.depth.facts[]#len": [
+"3"
+],
+".founds.f_same_five.depth.facts[].k": [
+"str"
+],
+".founds.f_same_five.depth.facts[].l": [
+"str"
+],
+".founds.f_same_five.depth.facts[].team": [
+"NoneType",
+"str"
+],
+".founds.f_same_five.depth.facts[].v": [
+"str"
+],
+".founds.f_same_five.depth.limit.short": [
+"str"
+],
+".founds.f_same_five.depth.limit.text": [
+"str"
+],
+".founds.f_same_five.depth.worth.short": [
+"str"
+],
+".founds.f_same_five.depth.worth.text": [
+"str"
+],
+".founds.f_same_five.line": [
+"str"
+],
+".founds.f_same_five.short": [
+"str"
+],
+".founds.f_same_five.src": [
+"str"
+],
+".founds.f_same_five.technical.confidence": [
+"str"
+],
+".founds.f_same_five.technical.coverage": [
+"str"
+],
+".founds.f_same_five.technical.eligibility": [
+"str"
+],
+".founds.f_same_five.technical.limits": [
+"str"
+],
+".founds.f_same_five.technical.relationships": [
+"str"
+],
+".founds.f_same_five.technical.rows": [
+"str"
+],
+".founds.f_same_five.technical.times": [
+"str"
+],
+".founds.f_same_five.technical.validity": [
+"str"
+],
+".founds.f_same_five.why.limit": [
+"str"
+],
+".founds.f_same_five.why.moments[]": [
+"str"
+],
+".founds.f_same_five.why.moments[]#len": [
+"2"
+],
+".founds.f_same_five.why.source": [
+"str"
+],
+".founds.f_same_five.why.text[]": [
+"str"
+],
+".founds.f_same_five.why.text[]#len": [
+"3"
+],
+".founds.f_same_five.why_it_matters": [
+"str"
+],
+".investigations[]#len": [
+"3"
+],
+".investigations[].ack.changed": [
+"str"
+],
+".investigations[].ack.close": [
+"str"
+],
+".investigations[].ack.far": [
+"str"
+],
+".investigations[].ack.mid": [
+"str"
+],
+".investigations[].ack.not_sure": [
+"str"
+],
+".investigations[].ack.same": [
+"str"
+],
+".investigations[].after_first.sub": [
+"str"
+],
+".investigations[].also_onice[]": [
+"str"
+],
+".investigations[].also_onice[]#len": [
+"2"
+],
+".investigations[].attempts[]#len": [
+"61"
+],
+".investigations[].attempts[].at[]": [
+"num"
+],
+".investigations[].attempts[].at[]#len": [
+"2"
+],
+".investigations[].attempts[].band": [
+"str"
+],
+".investigations[].attempts[].clock": [
+"str"
+],
+".investigations[].attempts[].dist": [
+"num"
+],
+".investigations[].attempts[].moment": [
+"NoneType",
+"str"
+],
+".investigations[].attempts[].per_label": [
+"str"
+],
+".investigations[].attempts[].period": [
+"num"
+],
+".investigations[].attempts[].pid": [
+"str"
+],
+".investigations[].attempts[].rank": [
+"num"
+],
+".investigations[].attempts[].result": [
+"str"
+],
+".investigations[].attempts[].row": [
+"num"
+],
+".investigations[].attempts[].word": [
+"str"
+],
+".investigations[].attempts[].xg": [
+"num"
+],
+".investigations[].bands[]#len": [
+"3"
+],
+".investigations[].bands[].blocked": [
+"num"
+],
+".investigations[].bands[].goals": [
+"num"
+],
+".investigations[].bands[].hi": [
+"num"
+],
+".investigations[].bands[].id": [
+"str"
+],
+".investigations[].bands[].label": [
+"str"
+],
+".investigations[].bands[].lo": [
+"num"
+],
+".investigations[].bands[].missed": [
+"num"
+],
+".investigations[].bands[].n": [
+"num"
+],
+".investigations[].bands[].range": [
+"str"
+],
+".investigations[].bands[].saved": [
+"num"
+],
+".investigations[].bands[].xg_mean": [
+"num"
+],
+".investigations[].card.art": [
+"str"
+],
+".investigations[].card.meta": [
+"str"
+],
+".investigations[].card.question": [
+"str"
+],
+".investigations[].card.still": [
+"NoneType",
+"str"
+],
+".investigations[].card.teaser": [
+"str"
+],
+".investigations[].category": [
+"str"
+],
+".investigations[].chances[]#len": [
+"2"
+],
+".investigations[].chances[].clock": [
+"str"
+],
+".investigations[].chances[].n": [
+"num"
+],
+".investigations[].chances[].per": [
+"str"
+],
+".investigations[].chances[].what": [
+"str"
+],
+".investigations[].empty_net_excluded": [
+"num"
+],
+".investigations[].found": [
+"str"
+],
+".investigations[].frm": [
+"str"
+],
+".investigations[].goal_dists[]": [
+"num"
+],
+".investigations[].goal_dists[]#len": [
+"4"
+],
+".investigations[].ice_intro.head": [
+"str"
+],
+".investigations[].ice_intro.sub": [
+"str"
+],
+".investigations[].id": [
+"str"
+],
+".investigations[].intro.head": [
+"str"
+],
+".investigations[].intro.sub": [
+"str"
+],
+".investigations[].kind": [
+"str"
+],
+".investigations[].links[]#len": [
+"2"
+],
+".investigations[].links[].call[]": [
+"num"
+],
+".investigations[].links[].call[]#len": [
+"2"
+],
+".investigations[].links[].moment": [
+"str"
+],
+".investigations[].links[].pass_": [
+"str"
+],
+".investigations[].links[].short": [
+"str"
+],
+".investigations[].links[].tag": [
+"str"
+],
+".investigations[].links[].tag_at": [
+"str"
+],
+".investigations[].merge_at[]": [
+"num"
+],
+".investigations[].merge_at[]#len": [
+"2"
+],
+".investigations[].moments[]": [
+"str"
+],
+".investigations[].moments[]#len": [
+"2"
+],
+".investigations[].pair.a": [
+"num"
+],
+".investigations[].pair.apart_m": [
+"num"
+],
+".investigations[].pair.b": [
+"num"
+],
+".investigations[].pair.ctx": [
+"str"
+],
+".investigations[].pair.deeper": [
+"str"
+],
+".investigations[].pair.head": [
+"str"
+],
+".investigations[].pair.limit": [
+"str"
+],
+".investigations[].pair.moment": [
+"str"
+],
+".investigations[].pair.rows[]": [
+"num"
+],
+".investigations[].pair.rows[]#len": [
+"2"
+],
+".investigations[].pair.rows_cmp[]#len": [
+"5"
+],
+".investigations[].pair.rows_cmp[][]": [
+"str"
+],
+".investigations[].pair.rows_cmp[][]#len": [
+"3"
+],
+".investigations[].pair.sub": [
+"str"
+],
+".investigations[].pre_read.chances[]": [
+"str"
+],
+".investigations[].pre_read.chances[]#len": [
+"2"
+],
+".investigations[].pre_read.head": [
+"str"
+],
+".investigations[].pre_read.hide_replays[]": [
+"str"
+],
+".investigations[].pre_read.hide_replays[]#len": [
+"1"
+],
+".investigations[].predict.id": [
+"str"
+],
+".investigations[].predict.options[]#len": [
+"2",
+"3"
+],
+".investigations[].predict.options[][]": [
+"str"
+],
+".investigations[].predict.options[][]#len": [
+"2",
+"3"
+],
+".investigations[].predict.q": [
+"str"
+],
+".investigations[].replays[]#len": [
+"2",
+"6"
+],
+".investigations[].replays[].end_copy.head": [
+"str"
+],
+".investigations[].replays[].end_copy.sub": [
+"str"
+],
+".investigations[].replays[].label": [
+"str"
+],
+".investigations[].replays[].moment": [
+"str"
+],
+".investigations[].replays[].pass_": [
+"str"
+],
+".investigations[].replays[].pass_copy.head": [
+"str"
+],
+".investigations[].replays[].pass_copy.sub": [
+"str"
+],
+".investigations[].replays[].row": [
+"num"
+],
+".investigations[].reveal": [
+"str"
+],
+".investigations[].rink_attack": [
+"str"
+],
+".investigations[].rink_note": [
+"str"
+],
+".investigations[].roll.from_s": [
+"num"
+],
+".investigations[].roll.per": [
+"str"
+],
+".investigations[].roll.to_s": [
+"num"
+],
+".investigations[].second_look.label": [
+"str"
+],
+".investigations[].second_look.row": [
+"num"
+],
+".investigations[].second_look.story": [
+"str"
+],
+".investigations[].status": [
+"str"
+],
+".investigations[].team": [
+"str"
+],
+".investigations[].to": [
+"str"
+],
+".investigations[].total": [
+"num"
+],
+".investigations[].video_intro.action": [
+"str"
+],
+".investigations[].video_intro.head": [
+"str"
+],
+".investigations[].video_intro.sub": [
+"str"
+],
+".moments.m51847.attack": [
+"str"
+],
+".moments.m51847.clip": [
+"str"
+],
+".moments.m51847.clock": [
+"str"
+],
+".moments.m51847.clock_s": [
+"num"
+],
+".moments.m51847.id": [
+"str"
+],
+".moments.m51847.kind": [
+"str"
+],
+".moments.m51847.label": [
+"str"
+],
+".moments.m51847.light.cx": [
+"num"
+],
+".moments.m51847.light.cy": [
+"num"
+],
+".moments.m51847.light.rx": [
+"num"
+],
+".moments.m51847.light.ry": [
+"num"
+],
+".moments.m51847.per_label": [
+"str"
+],
+".moments.m51847.period": [
+"num"
+],
+".moments.m51847.players[]#len": [
+"12"
+],
+".moments.m51847.players[].goalie": [
+"bool"
+],
+".moments.m51847.players[].pid": [
+"str"
+],
+".moments.m51847.players[].shift_s": [
+"NoneType",
+"num"
+],
+".moments.m51847.players[].x": [
+"num"
+],
+".moments.m51847.players[].y": [
+"num"
+],
+".moments.m51847.row": [
+"num"
+],
+".moments.m51847.score": [
+"str"
+],
+".moments.m51847.snapshot_row": [
+"num"
+],
+".moments.m51847.t": [
+"num"
+],
+".moments.m51847.window[]": [
+"num"
+],
+".moments.m51847.window[]#len": [
+"2"
+],
+".moments.m51847.x0": [
+"num"
+],
+".moments.m51894.attack": [
+"str"
+],
+".moments.m51894.clip": [
+"str"
+],
+".moments.m51894.clock": [
+"str"
+],
+".moments.m51894.clock_s": [
+"num"
+],
+".moments.m51894.id": [
+"str"
+],
+".moments.m51894.kind": [
+"str"
+],
+".moments.m51894.label": [
+"str"
+],
+".moments.m51894.light": [
+"NoneType"
+],
+".moments.m51894.per_label": [
+"str"
+],
+".moments.m51894.period": [
+"num"
+],
+".moments.m51894.players[]#len": [
+"12"
+],
+".moments.m51894.players[].goalie": [
+"bool"
+],
+".moments.m51894.players[].pid": [
+"str"
+],
+".moments.m51894.players[].shift_s": [
+"NoneType",
+"num"
+],
+".moments.m51894.players[].x": [
+"num"
+],
+".moments.m51894.players[].y": [
+"num"
+],
+".moments.m51894.row": [
+"num"
+],
+".moments.m51894.score": [
+"str"
+],
+".moments.m51894.snapshot_row": [
+"num"
+],
+".moments.m51894.t": [
+"num"
+],
+".moments.m51894.window[]": [
+"num"
+],
+".moments.m51894.window[]#len": [
+"2"
+],
+".moments.m51894.x0": [
+"num"
+],
+".moments.m52897.attack": [
+"str"
+],
+".moments.m52897.clip": [
+"str"
+],
+".moments.m52897.clock": [
+"str"
+],
+".moments.m52897.clock_s": [
+"num"
+],
+".moments.m52897.id": [
+"str"
+],
+".moments.m52897.kind": [
+"str"
+],
+".moments.m52897.label": [
+"str"
+],
+".moments.m52897.light.cx": [
+"num"
+],
+".moments.m52897.light.cy": [
+"num"
+],
+".moments.m52897.light.rx": [
+"num"
+],
+".moments.m52897.light.ry": [
+"num"
+],
+".moments.m52897.per_label": [
+"str"
+],
+".moments.m52897.period": [
+"num"
+],
+".moments.m52897.players[]#len": [
+"12"
+],
+".moments.m52897.players[].goalie": [
+"bool"
+],
+".moments.m52897.players[].pid": [
+"str"
+],
+".moments.m52897.players[].shift_s": [
+"NoneType",
+"num"
+],
+".moments.m52897.players[].x": [
+"num"
+],
+".moments.m52897.players[].y": [
+"num"
+],
+".moments.m52897.row": [
+"num"
+],
+".moments.m52897.score": [
+"str"
+],
+".moments.m52897.snapshot_row": [
+"num"
+],
+".moments.m52897.t": [
+"num"
+],
+".moments.m52897.window[]": [
+"num"
+],
+".moments.m52897.window[]#len": [
+"2"
+],
+".moments.m52897.x0": [
+"num"
+],
+".moments.m52898.attack": [
+"str"
+],
+".moments.m52898.clip": [
+"str"
+],
+".moments.m52898.clock": [
+"str"
+],
+".moments.m52898.clock_s": [
+"num"
+],
+".moments.m52898.id": [
+"str"
+],
+".moments.m52898.kind": [
+"str"
+],
+".moments.m52898.label": [
+"str"
+],
+".moments.m52898.light": [
+"NoneType"
+],
+".moments.m52898.per_label": [
+"str"
+],
+".moments.m52898.period": [
+"num"
+],
+".moments.m52898.players[]#len": [
+"12"
+],
+".moments.m52898.players[].goalie": [
+"bool"
+],
+".moments.m52898.players[].pid": [
+"str"
+],
+".moments.m52898.players[].shift_s": [
+"NoneType",
+"num"
+],
+".moments.m52898.players[].x": [
+"num"
+],
+".moments.m52898.players[].y": [
+"num"
+],
+".moments.m52898.row": [
+"num"
+],
+".moments.m52898.score": [
+"str"
+],
+".moments.m52898.snapshot_row": [
+"num"
+],
+".moments.m52898.t": [
+"num"
+],
+".moments.m52898.window[]": [
+"num"
+],
+".moments.m52898.window[]#len": [
+"2"
+],
+".moments.m52898.x0": [
+"num"
+],
+".moments.m53374.attack": [
+"str"
+],
+".moments.m53374.clip": [
+"str"
+],
+".moments.m53374.clock": [
+"str"
+],
+".moments.m53374.clock_s": [
+"num"
+],
+".moments.m53374.id": [
+"str"
+],
+".moments.m53374.kind": [
+"str"
+],
+".moments.m53374.label": [
+"str"
+],
+".moments.m53374.light": [
+"NoneType"
+],
+".moments.m53374.per_label": [
+"str"
+],
+".moments.m53374.period": [
+"num"
+],
+".moments.m53374.players[]#len": [
+"12"
+],
+".moments.m53374.players[].goalie": [
+"bool"
+],
+".moments.m53374.players[].pid": [
+"str"
+],
+".moments.m53374.players[].shift_s": [
+"NoneType",
+"num"
+],
+".moments.m53374.players[].x": [
+"num"
+],
+".moments.m53374.players[].y": [
+"num"
+],
+".moments.m53374.row": [
+"num"
+],
+".moments.m53374.score": [
+"str"
+],
+".moments.m53374.snapshot_row": [
+"num"
+],
+".moments.m53374.t": [
+"num"
+],
+".moments.m53374.window[]": [
+"num"
+],
+".moments.m53374.window[]#len": [
+"2"
+],
+".moments.m53374.x0": [
+"num"
+],
+".moments.m53382.attack": [
+"str"
+],
+".moments.m53382.clip": [
+"str"
+],
+".moments.m53382.clock": [
+"str"
+],
+".moments.m53382.clock_s": [
+"num"
+],
+".moments.m53382.id": [
+"str"
+],
+".moments.m53382.kind": [
+"str"
+],
+".moments.m53382.label": [
+"str"
+],
+".moments.m53382.light": [
+"NoneType"
+],
+".moments.m53382.per_label": [
+"str"
+],
+".moments.m53382.period": [
+"num"
+],
+".moments.m53382.players[]#len": [
+"12"
+],
+".moments.m53382.players[].goalie": [
+"bool"
+],
+".moments.m53382.players[].pid": [
+"str"
+],
+".moments.m53382.players[].shift_s": [
+"NoneType",
+"num"
+],
+".moments.m53382.players[].x": [
+"num"
+],
+".moments.m53382.players[].y": [
+"num"
+],
+".moments.m53382.row": [
+"num"
+],
+".moments.m53382.score": [
+"str"
+],
+".moments.m53382.snapshot_row": [
+"num"
+],
+".moments.m53382.t": [
+"num"
+],
+".moments.m53382.window[]": [
+"num"
+],
+".moments.m53382.window[]#len": [
+"2"
+],
+".moments.m53382.x0": [
+"num"
+],
+".passes.p51844.clip": [
+"str"
+],
+".passes.p51844.clock": [
+"str"
+],
+".passes.p51844.clock_s": [
+"num"
+],
+".passes.p51844.dt": [
+"num"
+],
+".passes.p51844.end[]": [
+"num"
+],
+".passes.p51844.end[]#len": [
+"2"
+],
+".passes.p51844.id": [
+"str"
+],
+".passes.p51844.light.cx": [
+"num"
+],
+".passes.p51844.light.cy": [
+"num"
+],
+".passes.p51844.light.rx": [
+"num"
+],
+".passes.p51844.light.ry": [
+"num"
+],
+".passes.p51844.moment": [
+"str"
+],
+".passes.p51844.pan_to": [
+"NoneType"
+],
+".passes.p51844.passer": [
+"str"
+],
+".passes.p51844.period": [
+"num"
+],
+".passes.p51844.receiver": [
+"str"
+],
+".passes.p51844.row": [
+"num"
+],
+".passes.p51844.shot.at[]": [
+"num"
+],
+".passes.p51844.shot.at[]#len": [
+"2"
+],
+".passes.p51844.shot.pid": [
+"str"
+],
+".passes.p51844.shot.result": [
+"str"
+],
+".passes.p51844.shot.row": [
+"num"
+],
+".passes.p51844.start[]": [
+"num"
+],
+".passes.p51844.start[]#len": [
+"2"
+],
+".passes.p51844.t": [
+"num"
+],
+".passes.p51844.tag_px[]": [
+"num"
+],
+".passes.p51844.tag_px[]#len": [
+"2"
+],
+".passes.p51844.tag_side": [
+"str"
+],
+".passes.p52893.clip": [
+"str"
+],
+".passes.p52893.clock": [
+"str"
+],
+".passes.p52893.clock_s": [
+"num"
+],
+".passes.p52893.dt": [
+"num"
+],
+".passes.p52893.end[]": [
+"num"
+],
+".passes.p52893.end[]#len": [
+"2"
+],
+".passes.p52893.id": [
+"str"
+],
+".passes.p52893.light.cx": [
+"num"
+],
+".passes.p52893.light.cy": [
+"num"
+],
+".passes.p52893.light.rx": [
+"num"
+],
+".passes.p52893.light.ry": [
+"num"
+],
+".passes.p52893.moment": [
+"str"
+],
+".passes.p52893.pan_to": [
+"num"
+],
+".passes.p52893.passer": [
+"str"
+],
+".passes.p52893.period": [
+"num"
+],
+".passes.p52893.receiver": [
+"str"
+],
+".passes.p52893.row": [
+"num"
+],
+".passes.p52893.shot.at[]": [
+"num"
+],
+".passes.p52893.shot.at[]#len": [
+"2"
+],
+".passes.p52893.shot.pid": [
+"str"
+],
+".passes.p52893.shot.result": [
+"str"
+],
+".passes.p52893.shot.row": [
+"num"
+],
+".passes.p52893.start[]": [
+"num"
+],
+".passes.p52893.start[]#len": [
+"2"
+],
+".passes.p52893.t": [
+"num"
+],
+".passes.p52893.tag_px[]": [
+"num"
+],
+".passes.p52893.tag_px[]#len": [
+"2"
+],
+".passes.p52893.tag_side": [
+"str"
+],
+".people.<id>.full": [
+"str"
+],
+".people.<id>.goalie": [
+"bool"
+],
+".people.<id>.label": [
+"str"
+],
+".people.<id>.name": [
+"str"
+],
+".people.<id>.no": [
+"str"
+],
+".people.<id>.team": [
+"str"
+],
+".rink.blue_x": [
+"num"
+],
+".rink.dots[]#len": [
+"2"
+],
+".rink.dots[][]": [
+"num"
+],
+".rink.dots[][]#len": [
+"2"
+],
+".rink.goal_x": [
+"num"
+],
+".rink.half_h": [
+"num"
+],
+".rink.half_w": [
+"num"
+],
+".rink.v0": [
+"num"
+],
+".score_timeline[]#len": [
+"8"
+],
+".score_timeline[].clock_s": [
+"num"
+],
+".score_timeline[].period": [
+"num"
+],
+".score_timeline[].team": [
+"str"
+],
+".version": [
+"str"
+]
+}
+}

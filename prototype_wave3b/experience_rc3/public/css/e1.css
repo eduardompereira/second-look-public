@@ -1,0 +1,26 @@
+
+.e1-lab { position: fixed; left: 10px; bottom: 10px; z-index: 45; display: inline-flex; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 999px; border: 1px dashed #5b6676; background: rgba(13,17,23,.88); color: #b8c0cc; font: 600 11px/1 var(--f-mono, monospace); letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+.e1-lab b { color: #f2c94c; }
+.e1-sheet .e1-list { list-style: none; margin: 10px 0; padding: 0; display: grid; gap: 10px; }
+.e1-sheet label { display: flex; gap: 10px; align-items: flex-start; } .e1-sheet input { margin-top: 4px; width: 18px; height: 18px; }
+.e1-sheet small { display: block; color: var(--quiet, #8b95a3); font-size: 12.5px; margin-top: 2px; }
+.e1-acts { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.e1-card .e1-name { margin: 2px 0 12px; font: 750 22px/1.15 var(--f-ui); } .e1-card .e1-name b { color: var(--quiet); font-weight: 650; margin-right: 2px; } .e1-card .e1-name small { font-size: 12px; color: var(--quiet, #8b95a3); margin-left: 6px; }
+.e1-per { display: flex; gap: 6px; margin: 0 0 12px; } .e1-per button { min-height: 36px; padding: 4px 12px; border-radius: 999px; border: 1px solid #2a3340; background: transparent; color: inherit; }
+.e1-per button[aria-pressed=true] { background: #1b2430; border-color: #f2c94c; }
+.e1-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 0 0 8px; } .e1-grid dt { font: 700 10.5px/1.2 var(--f-mono, monospace); letter-spacing: .1em; text-transform: uppercase; color: var(--data, #f2c94c); }
+.e1-grid dd { margin: 2px 0 0; font-size: 22px; font-weight: 650; color: var(--story, #fff); } .e1-grid dd small { font-size: 13px; font-weight: 400; color: var(--quiet, #8b95a3); }
+.e1-cnote { font-size: 13px; color: var(--quiet, #8b95a3); } .e1-src summary { cursor: pointer; margin: 8px 0; } .e1-src dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 10px; font-size: 13px; }
+.e1-pl { all: unset; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 3px; } .e1-pl:focus-visible { outline: 2px solid #f2c94c; outline-offset: 2px; }
+.e1-cardbtn { margin-top: 6px; min-height: 36px; padding: 4px 12px; border-radius: 999px; border: 1px solid #2a3340; background: transparent; color: inherit; font-size: 13px; }
+
+.e1-card .e1-cbox { width: min(420px, calc(100vw - 32px)); }
+.e1-chead { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.e1-chead .skick { margin: 0; }
+.e1-x { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgba(255,255,255,.22); background: transparent; color: var(--story); font-size: 22px; line-height: 1; }
+.e1-grid { grid-template-columns: repeat(2, 1fr); gap: 14px 16px; margin: 4px 0 12px; }
+.e1-grid dt { font: 650 11px/1.2 var(--f-mono); letter-spacing: .08em; color: var(--quiet); text-transform: uppercase; }
+.e1-grid dd { margin: 3px 0 0; font: 750 21px/1.1 var(--f-tele); font-variant-numeric: tabular-nums; color: var(--story); }
+.e1-grid dd small { font: 400 13px/1 var(--f-ui); color: var(--quiet); }
+.e1-cnote { margin: 0; font-size: 13px; line-height: 1.4; color: var(--quiet); }
+.e1-pl { text-decoration: underline; text-decoration-color: rgba(255,194,122,.7); text-decoration-thickness: 1.5px; }

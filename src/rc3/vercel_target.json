@@ -1,0 +1,9 @@
+{
+ "_doc": "The ONLY Vercel destination a build of this repository may be linked to. Read by src/rc3/build_rc3_package.py and src/rc3/vercel_preflight.mjs. Replace the placeholders in your own private copy; fill org_id / project_id only after confirming them with `vercel project inspect <project> --scope <team> --json`. Never put a token here.",
+ "team_slug": "<your-vercel-team-slug>",
+ "project_name": "second-look-rc3-preview",
+ "org_id": null,
+ "project_id": null,
+ "forbidden_team_slugs": [],
+ "forbidden_projects": []
+}

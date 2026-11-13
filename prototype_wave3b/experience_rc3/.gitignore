@@ -1,0 +1,8 @@
+# Confidential: derived payload, stills, test sessions, QA screenshots and QA transcodes (D-03, D-10, D-12)
+private_data/
+sessions/
+screens/
+qa/
+v3_snapshot/second_look.json.ref
+study_local/
+node_modules/

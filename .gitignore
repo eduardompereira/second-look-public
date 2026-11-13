@@ -1,0 +1,26 @@
+# Second Look · public edition. Only allow-listed source is committed (tools/public_gate.py).
+# generated locally
+fixtures/media/
+prototype_wave3b/experience_rc3/private_data/
+prototype_wave3b/experience_rc3/qa/
+prototype_wave3b/experience_rc3/sessions/
+deploy/
+node_modules/
+__pycache__/
+*.pyc
+# never commit
+.env
+.env.*
+.vercel/
+*.mp4
+*.mov
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.csv
+*.xlsx
+*.pdf
+*.jsonl
+.DS_Store
+*.log

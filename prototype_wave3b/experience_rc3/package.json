@@ -1,0 +1,7 @@
+{
+  "name": "second-look-app",
+  "private": true,
+  "type": "module",
+  "description": "Second Look app (zero runtime dependencies). Default = clarity-first release; ?clarity=0 = previous pacing.",
+  "scripts": { "dev": "PORT=${PORT:-5199} node server.mjs" }
+}

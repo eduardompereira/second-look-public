@@ -1,0 +1,18 @@
+{
+  "name": "second-look-public-edition",
+  "private": true,
+  "type": "module",
+  "description": "Second Look — a post-match 'see what you missed' format for ice hockey (SIC DataHack 2026). Public edition: runs on a fictional match with placeholder video.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fixture:build": "python3 tools/make_fictional_fixtures.py",
+    "fixture:setup": "python3 fixtures/setup_fixture.py",
+    "fixture:check": "python3 fixtures/setup_fixture.py --check",
+    "dev": "cd prototype_wave3b/experience_rc3 && CLIPS_DIR=${CLIPS_DIR:-../../fixtures/media} PORT=${PORT:-5199} node server.mjs",
+    "test:public": "bash tools/test_public.sh",
+    "test:contract": "python3 tests/fixture_contract.py",
+    "gate:publish": "python3 tools/public_gate.py",
+    "qa:install": "npm install && npx playwright install chromium"
+  },
+  "devDependencies": { "playwright": "1.63.0" }
+}
