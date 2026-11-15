@@ -570,7 +570,7 @@ function scorePage() {
   });
 }
 function hookRC2(k) {
-  const head = k === 'C' ? 'You saw the winning goal.' : 'You saw the goal that won the final.';
+  const head = k === 'C' ? 'You saw the winning goal.' : "You saw the goal that put Harbour ahead for good.";
   const dur = DUR ? ' · about a minute' : '';
   const img = `<picture><source media="(max-width: 700px)" srcset="/data/hook_b_m.jpg"><img src="/data/hook_b.jpg" alt=""></picture>`;
   const chip = `<span class="hk-moment" aria-hidden="true"><i></i>3rd period · 12:41 · 3–3</span>`;

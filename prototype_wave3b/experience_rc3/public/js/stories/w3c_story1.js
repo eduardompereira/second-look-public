@@ -606,7 +606,7 @@ export function handlersW1(D, X) {
       el.setAttribute('role', 'group');
       el.setAttribute('aria-label', 'What next');
       const nextAt = `${F.gp04.period.replace(/^P3 0?/, '3rd period, ')} · ${F.gp04.score_before}`;
-      el.innerHTML = `<p class="p1-k">${state.clarity ? `Next: ${nextAt}` : "Earlier · same goalie"}</p><p class="p1-q">${state.clarity ? "Same goalie. Harbour shot from almost the same spot. What happened next?" : 'The first shot wasn’t the end.'}</p>
+      el.innerHTML = `<p class="p1-k">${state.clarity ? `Next: ${nextAt}` : "Earlier · same goalie"}</p><p class="p1-q">${state.clarity ? "Same goalie. Harbour shot from almost the same spot. What happened to that shot?" : 'The first shot wasn’t the end.'}</p>
         <button class="showme p1-next" type="button" data-k="next"><i class="pg" aria-hidden="true"></i><span>Show me</span></button>
         <div class="p1-alt"><button class="textbtn p1-shots" type="button" data-k="shots">${state.clarity && X.goalie_pool ? `All ${X.goalie_pool.n_attempts} Harbour shot attempts with Novak in goal` : state.rc3 ? "All Harbour attempts on Novak" : "All attempts on this goalie"}</button>
           <button class="textbtn quiet" type="button" data-k="score">Back to the score</button></div>`;
