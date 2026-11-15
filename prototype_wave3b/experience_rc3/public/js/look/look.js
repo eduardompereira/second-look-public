@@ -92,6 +92,10 @@ async function create(ctx, {
       CARDS.openCard(b.dataset.card, log, b);
     }, true);
   }
+  function cardName(pid) {
+    const pp = PEOPLE[pid];
+    return CARDS?.hasCard(pid) ? `<button type="button" class="e1-pl" data-card="${pid}" aria-label="${esc(pp.full)}: match card">${esc(pp.full)}</button>` : esc(pp.full);
+  }
   const SELQ = new URLSearchParams(location.search).get('selects_map'),
     SELCTX = SELQ === '1';
   const SELMAP = SELQ === '1' || SELQ === 'card' ? await import('./selects_map.js') : null;
@@ -157,6 +161,10 @@ async function create(ctx, {
     requestAnimationFrame(scrollHint);
   };
   const bandB = cap.actEl.parentElement;
+  const sideDoor = document.createElement('div');
+  sideDoor.className = 'lk-acts lk-sidedoor';
+  sideDoor.hidden = true;
+  bandB.insertBefore(sideDoor, bandB.firstChild);
   function scrollHint() {
     const b = bandB;
     if (!b) return;
@@ -659,6 +667,8 @@ async function create(ctx, {
     plateOff();
     document.querySelector('.lk-sheet')?.remove();
     STEPS?.off();
+    sideDoor.hidden = true;
+    sideDoor.innerHTML = '';
     screen.scrollTop = 0;
     bandB.scrollTop = 0;
     stage.clearMarks({
@@ -1147,7 +1157,7 @@ async function create(ctx, {
   const goalieOf = (mo, team) => mo.players.find(p => p.goalie && PEOPLE[p.pid]?.team === team);
   const nameRow = (p, extra = '') => {
     const pp = PEOPLE[p.pid],
-      nm = CARDS?.hasCard(p.pid) ? `<button type="button" class="e1-pl" data-card="${p.pid}" aria-label="${esc(pp.full)}: match card">${esc(pp.full)}</button>` : esc(pp.full);
+      nm = cardName(p.pid);
     return `<li><span class="lk-ln ${pp.team}" aria-hidden="true">${esc(pp.no.replace('#', ''))}</span><span class="lk-lnm">${nm}</span>${extra}</li>`;
   };
   function lineupHTML(A, Bm = null, times = null) {
@@ -1520,7 +1530,7 @@ async function create(ctx, {
     const inBand = m.band ? inv.attempts.filter(x => x.band === m.band) : inv.attempts.filter(x => x.result === 'goal');
     const idx = a ? inBand.findIndex(x => x.row === a.row) : -1;
     const card = a ? `<article class="lk-attcard" aria-live="polite" data-row="${a.row}">
-        <header><span class="lk-whoring" aria-hidden="true">${esc(PEOPLE[a.pid].no.replace('#', ''))}</span><span><b>${esc(PEOPLE[a.pid].full)}</b><em>Harbour · ${esc(PEOPLE[a.pid].no)} · ${esc(a.per_label)} · ${esc(a.clock)}</em></span></header>
+        <header><span class="lk-whoring" aria-hidden="true">${esc(PEOPLE[a.pid].no.replace('#', ''))}</span><span class="lk-attwho"><b>${cardName(a.pid)}</b><em>Harbour · ${esc(PEOPLE[a.pid].no)} · ${esc(a.per_label)} · ${esc(a.clock)}</em></span></header>
         <dl class="lk-attfacts"><div><dt>Result</dt><dd>${esc(a.word)}</dd></div><div><dt>Distance</dt><dd>${a.dist} m from the net</dd></div>
           <div class="model"><dt>Chance quality <small>shot model</small></dt><dd>${a.xg.toFixed(3)} · ${ord(a.rank)} of ${inv.total}</dd></div></dl>
         <div class="lk-attfoot">${a.moment ? `<button type="button" class="lk-watch" data-moment="${a.moment}">${ICON.play}<span>Watch it</span></button>` : `<span class="lk-novideo">${RC3 ? 'No clip of this one in Second Look' : 'Not in our video clips'}</span>`}
@@ -1773,32 +1783,20 @@ async function create(ctx, {
     st.map = {
       band: null,
       sel: null,
-      all: false,
-      bandsOpen: RC3
+      all: !!RC3,
+      bandsOpen: false
     };
-    document.body.dataset.beat = `look_${inv.id}_reveal`;
-    renderMapPanel(inv, {
-      reveal: true
-    });
-    await head(`${inv.total} attempts on Novak.`, 'Here is where they came from, by distance from his net.', inv.category);
-    alive(run);
-    await sleep(reduced() ? 150 : 900);
-    alive(run);
     st.mapRevealed = true;
-    layoutMap();
-    if (!reduced()) {
-      svg.querySelectorAll('.lk-att.goal').forEach((el, i) => {
-        el.style.animationDelay = `${i * 160}ms`;
-        el.classList.add('pop');
-      });
-    }
-    await sleep(reduced() ? 150 : 1100);
-    alive(run);
-    if (RC3) {
-      st.map.all = true;
-      st.map.bandsOpen = false;
-    }
-    return foundMap(run, inv);
+    const done = foundMap(run, inv);
+    popGoals();
+    return done;
+  }
+  function popGoals() {
+    if (reduced()) return;
+    svg.querySelectorAll('.lk-att.goal').forEach((el, i) => {
+      el.style.animationDelay = `${i * 160}ms`;
+      el.classList.add('pop');
+    });
   }
   async function foundMap(run, inv, {
     instant = false
@@ -2156,12 +2154,25 @@ async function create(ctx, {
         return false;
       }
     };
-    const otherSide = SEL && SELCTX && inv.id === 'shots' && (st.origin && st.origin.id === 's2_carry' || !st.origin && gp09Seen()) ? [{
-      id: 'other',
-      label: 'And the other side?',
-      kind: 'go',
-      visited: st.found.has(INV[SEL.id]?.found)
-    }] : [];
+    const sideOpen = st.origin && st.origin.id === 's2_carry' || !st.origin && gp09Seen();
+    if (SEL && SELCTX && inv.id === 'shots' && sideOpen) {
+      const seen = st.found.has(INV[SEL.id]?.found);
+      sideDoor.innerHTML = `<button type="button" class="lk-act go" data-a="other"${seen ? ' data-visited="1"' : ''}><i aria-hidden="true">${ICON.next}</i><span>And the other side?</span>${seen ? `<em class="lk-seen">${ICON.check}seen</em>` : ''}</button>`;
+      sideDoor.hidden = false;
+      sideDoor.firstChild.onclick = e => {
+        e.stopPropagation();
+        if (run !== st.run) return;
+        log.log('look_door', {
+          from: cur(),
+          to: 'other',
+          where: 'top'
+        });
+        openInv(SEL.id);
+      };
+    } else if (SEL && SELCTX && inv.id === 'shots' && !st.origin) {
+      sideDoor.innerHTML = `<p class="lk-sidenote">The other side’s shot map opens after Story 2.</p>`;
+      sideDoor.hidden = false;
+    }
     if (st.origin) {
       const own = inv.kind === 'map' ? inv.pair ? [{
         id: 'pair',
@@ -2179,7 +2190,7 @@ async function create(ctx, {
         id: 'origin',
         label: st.origin.label,
         kind: 'back'
-      }, ...backHome, ...own, ...otherSide, {
+      }, ...backHome, ...own, {
         id: 'score',
         label: 'Back to the score',
         kind: 'quiet'
@@ -2210,7 +2221,7 @@ async function create(ctx, {
       label: r.label,
       kind: 'replay',
       visited: !!st.revisited?.[`${inv.id}:${r.moment}`]
-    }))).concat(otherSide).concat(backHome).concat(others.length ? [{
+    }))).concat(backHome).concat(others.length ? [{
       id: 'home',
       label: 'Explore another discovery',
       kind: 'next'
@@ -2454,7 +2465,9 @@ async function create(ctx, {
       openReplay,
       ord,
       reduced,
-      sleep
+      sleep,
+      cardName,
+      popGoals
     });
     if (SEL) {
       HERO3[SEL.id] = SEL.hero;

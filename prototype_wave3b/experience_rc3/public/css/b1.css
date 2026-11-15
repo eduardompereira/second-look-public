@@ -127,3 +127,15 @@ body.look .fs-ice .fs-rcv { pointer-events: none; z-index: 1; }
 body.look .fs-ice .lk-tok { z-index: 3; }
 
 body.look .lk-nav { background: linear-gradient(#000 0, #000 calc(100% - 10px), rgba(0,0,0,0) 100%); }
+
+body.look .lk-lu li { align-items: start; line-height: 18px; }
+body.look .lk-lu li .lk-ln, body.look .lk-lu li .e1-pl, body.look .lk-lu li .lk-on { line-height: 18px; }
+
+body.look .lk3-strip svg { overflow: hidden; }
+body.look .lk3-more { background: #090b0f; }
+body.look .b1-more .lk-lu .lk-was { margin-top: 6px; }
+
+body.look .lk-sidedoor { margin: 0 auto 14px; }
+body.look .lk-sidedoor[hidden] { display: none; }
+
+body.look .lk-sidedoor .lk-sidenote { margin: 0; font-size: 13px; line-height: 1.4; color: var(--quiet); text-align: left; }

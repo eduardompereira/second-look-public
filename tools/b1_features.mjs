@@ -175,6 +175,7 @@ if (seg === 'a') {
   const hero = await txt('.lk3');
   check("Harbour Shots: 61 attempts with Novak in goal, incl. missed and blocked", /61 Harbour shot attempts with Novak in goal, including missed and blocked/.test(hero), hero);
   check("Harbour Shots: no early Ridge door before GP-09 has been revealed", !(await acts()).includes('other'), (await acts()).join(','));
+  check("Harbour Shots: before GP-09, a quiet note (no control) where the door will be", !!(await p.$('.lk-sidedoor:not([hidden]) .lk-sidenote')) && !(await p.$('.lk-sidedoor button')));
   const sum = await txt('.b1-more > summary');
   check("Harbour Shots: one optional layer, titled with a fan question", sum === 'How did each distance go?', sum);
   await p.$eval('.b1-more', d => {
@@ -195,6 +196,7 @@ if (seg === 'a') {
   await beat('^look_shots_found$');
   await p.waitForTimeout(1200);
   check("after GP-09: \"And the other side?\" offered from the Harbour map", (await acts()).includes('other'), (await acts()).join(','));
+  check('after GP-09: the door is at the top of the findings column (PR #27 placement), no bottom duplicate', !!(await p.$('.lk-sidedoor:not([hidden]) .lk-act[data-a=other]')) && (await p.$$('.lk-act[data-a=other]')).length === 1);
   await bottomAll();
   await p.click('.lk-act[data-a=other]');
   await beat('look_shots_sel_predict', 30000);

@@ -326,7 +326,7 @@ investigations = [
      "bands": bands,
      "attempts": [{"row": a["row"], "period": a["period"], "per_label": per_label(a["period"]), "clock": clock(a["s"]),
                    "pid": a["pid"], "result": a["result"], "word": WORD[a["result"]], "dist": a["dist"], "xg": a["xg"],
-                   "rank": a["rank"], "band": band_of(a["dist"]), "at": a["at"],
+                   "rank": a["rank"], "band": band_of(a["dist"]), "at": [r2(-a["at"][0]), a["at"][1]],   # map frame: attacked net at -goal_x, as the other-side map
                    "moment": next((m for m, v in moments.items() if v["row"] == a["row"]), None)} for a in attempts],
      "total": len(attempts), "empty_net_excluded": 1,
      "goal_dists": [a["dist"] for a in attempts if a["result"] == "goal"],

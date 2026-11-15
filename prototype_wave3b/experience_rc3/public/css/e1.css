@@ -24,3 +24,8 @@
 .e1-grid dd small { font: 400 13px/1 var(--f-ui); color: var(--quiet); }
 .e1-cnote { margin: 0; font-size: 13px; line-height: 1.4; color: var(--quiet); }
 .e1-pl { text-decoration: underline; text-decoration-color: rgba(255,194,122,.7); text-decoration-thickness: 1.5px; }
+
+body.look .lk-attcard .lk-attwho { flex: 1 1 auto; min-width: 0; }
+body.look .lk-attcard .lk-attwho b { line-height: 1.32; overflow-wrap: anywhere; }
+body.look .lk-attcard .lk-attwho .e1-pl { text-underline-offset: 3px; text-decoration-skip-ink: auto; }
+body.look .lk-attcard .lk-attwho em { margin-top: 4px; }

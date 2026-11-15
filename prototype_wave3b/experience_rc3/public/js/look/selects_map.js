@@ -55,6 +55,7 @@ export function selectsMap(k) {
     reduced,
     sleep
   } = k;
+  const cardName = k.cardName || (pid => esc(PEOPLE[pid].full));
   const ID = 'shots_sel',
     inv = INV[ID];
   if (!inv) return null;
@@ -158,7 +159,7 @@ export function selectsMap(k) {
     const idx = a ? inBand.findIndex(x => x.row === a.row) : -1;
     const model = a && a.xg != null ? `<div class="model"><dt>Chance quality <small>shot model</small></dt><dd>${a.xg.toFixed(3)} · ${ord(a.rank)} of ${inv.rated}</dd></div>` : '';
     const card = a ? `<article class="lk-attcard" aria-live="polite" data-row="${a.row}">
-        <header><span class="lk-whoring" aria-hidden="true">${esc(PEOPLE[a.pid].no.replace('#', ''))}</span><span><b>${esc(PEOPLE[a.pid].full)}</b><em>${esc(inv.team_label)} · ${esc(PEOPLE[a.pid].no)} · ${esc(a.per_label)} · ${esc(a.clock)}</em></span></header>
+        <header><span class="lk-whoring" aria-hidden="true">${esc(PEOPLE[a.pid].no.replace('#', ''))}</span><span class="lk-attwho"><b>${cardName(a.pid)}</b><em>${esc(inv.team_label)} · ${esc(PEOPLE[a.pid].no)} · ${esc(a.per_label)} · ${esc(a.clock)}</em></span></header>
         <dl class="lk-attfacts"><div><dt>Result</dt><dd>${esc(a.word)}</dd></div><div><dt>Distance</dt><dd>${a.dist} m from the net</dd></div>${model}</dl>
         <div class="lk-attfoot">${a.moment ? `<button type="button" class="lk-watch" data-moment="${a.moment}">${ICON.play}<span>Watch it</span></button>` : `<span class="lk-novideo">Not in our video clips</span>`}
           ${idx >= 0 && inBand.length > 1 ? `<span class="lk-step"><button type="button" class="lk-stepb" data-d="-1" aria-label="Previous attempt">${ICON.back}</button><span>${idx + 1} of ${inBand.length}${m.band ? '' : ' goals'}</span><button type="button" class="lk-stepb" data-d="1" aria-label="Next attempt">${ICON.next}</button></span>` : ''}</div></article>` : `<p class="lk-maphint">Tap a band, a goal or any attempt on the rink to see it here.</p>`;
@@ -403,32 +404,13 @@ export function selectsMap(k) {
     Object.assign(S(), {
       band: null,
       sel: null,
-      all: false,
-      bandsOpen: RC3
+      all: !!RC3,
+      bandsOpen: false,
+      revealed: true
     });
-    document.body.dataset.beat = `look_${ID}_reveal`;
-    renderPanel({
-      reveal: true
-    });
-    await head(`${inv.total} attempts on ${GN}.`, 'Here is where they came from, by distance from his net.', inv.category);
-    alive(runId);
-    await sleep(reduced() ? 150 : 900);
-    alive(runId);
-    S().revealed = true;
-    layout();
-    if (!reduced()) {
-      svg.querySelectorAll('.lk-att.goal').forEach((el, i) => {
-        el.style.animationDelay = `${i * 160}ms`;
-        el.classList.add('pop');
-      });
-    }
-    await sleep(reduced() ? 150 : 1100);
-    alive(runId);
-    if (RC3) {
-      S().all = true;
-      S().bandsOpen = false;
-    }
-    return found(runId, inv);
+    const done = found(runId, inv);
+    k.popGoals?.();
+    return done;
   }
   async function found(runId, _inv, {
     instant = false
